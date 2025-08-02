@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "dashboard_link": "الأصول",
+    "profile_link": "الملف الشخصي",
+    "logout_button": "تسجيل الخروج",
+    "signin_link": "تسجيل الدخول",
+    "signup_link": "إنشاء حساب"
+  },
+  "landing_page": {
+    "title": "إدارة تتبع الأصول",
+    "description": "قم بإدارة وتتبع أصول شركتك واحتياجات الصيانة الخاصة بها بكل سهولة.",
+    "signin_button": "تسجيل الدخول",
+    "signup_button": "إنشاء حساب"
+  },
+  "register_page": {
+    "title": "إنشاء حساب",
+    "subtitle": "ابدأ بإنشاء حسابك.",
+    "name_label": "الاسم الكامل",
+    "name_placeholder": "أدخل اسمك الكامل",
+    "username_label": "اسم المستخدم",
+    "username_placeholder": "أدخل اسم المستخدم",
+    "password_label": "كلمة المرور",
+    "confirmpass_label": "تأكيد كلمة المرور",
+    "department_label": "القسم",
+    "department_placeholder": "أدخل اسم قسمك",
+    "create_account_button": "إنشاء حساب",
+    "login_prompt": "هل لديك حساب بالفعل؟",
+    "login_link": "تسجيل الدخول"
+  },
+  "validation": {
+    "username_required": "اسم المستخدم مطلوب.",
+    "username_length": "يجب أن يكون اسم المستخدم 4 أحرف على الأقل.",
+    "password_required": "كلمة المرور مطلوبة.",
+    "password_invalid": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل وتتضمن حرفًا ورقمًا ورمزًا خاصًا.",
+    "passwords_match": "كلمات المرور غير متطابقة."
+  }
+}

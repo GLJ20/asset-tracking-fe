@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import LandingPg from './pages/LandingPg'
 
 const App = () => {
 
@@ -8,7 +9,10 @@ const App = () => {
     <>
       <NavBar />
       <Routes>
-        <Route path= '/'/>
+        <Route path='/' element={<LandingPg />}/>
+        <Route path= '/signin' element={<SignIn />}/>
+        <Route path='/signup' element={<SignUp />}/>
+        <Route path='/dashboard' element={<Dashboard />}/>
       </Routes>
     </>
   )
