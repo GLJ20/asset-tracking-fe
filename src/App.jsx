@@ -6,7 +6,10 @@ const App = () => {
 
   return (
     <>
-
+      <NavBar />
+      <Routes>
+        <Route path= '/'/>
+      </Routes>
     </>
   )
 }
