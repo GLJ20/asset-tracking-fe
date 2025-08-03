@@ -27,11 +27,36 @@
     "login_prompt": "Already have an account?",
     "login_link": "Sign In"
   },
+    "login_page": {
+    "username_label": "Username",
+    "username_placeholder": "username",
+    "password_label": "Password",
+    "password_placeholder": "Password",
+    "login_button": "Login",
+    "register_prompt": "Don't have an account?",
+    "register_link": "Register",
+    "error_message": "Login Failed, please try again."
+  },
   "validation": {
     "username_required": "Username is required.",
     "username_length": "Username must be at least 4 characters.",
     "password_required": "Password is required.",
     "password_invalid": "Password must be at least 8 characters and include a letter, number, and special character.",
     "passwords_match": "Passwords do not match."
+  },
+  "asset": {
+    "identifier": "Identifier",
+    "type": "Type",
+    "department": "Department",
+    "location": "Location",
+    "assigned_to": "Assigned To",
+    "not_assigned": "Not Assigned",
+    "status": {
+      "in_use": "In Use",
+      "available": "Available",
+      "in_repair": "In Repair",
+      "retired": "Retired",
+      "lost": "Lost"
+    }
   }
 }

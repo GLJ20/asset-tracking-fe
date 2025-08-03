@@ -3,7 +3,7 @@ import { Register } from "../services/auth"
 import { Link, useNavigate } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
-const Register = () => {
+const SignUp = () => {
     let navigate = useNavigate()
     const {t, i18n} = useTranslation()
 
@@ -125,12 +125,12 @@ const Register = () => {
                     {errors.password && <span className="error-message">{errors.password}</span>}
                 </div>
                 <div className="input-wrapper">
-                    <label htmlFor="confirmPassword">{t('register_page.confirmpass_label')}</label>
+                    <label htmlFor="confirmpass">{t('register_page.confirmpass_label')}</label>
                     <input
                         onChange={handleChange}
                         type="password"
                         id="confirmpass"
-                        value={formVals.confirmPassword}
+                        value={formVals.confirmpass}
                         required
                     />
                     {errors.confirmpass && <span className="error-message">{errors.confirmpass}</span>}
@@ -159,4 +159,4 @@ const Register = () => {
         </>
     )
 }
-export default Register
+export default SignUp

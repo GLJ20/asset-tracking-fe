@@ -19,17 +19,17 @@ const NavBar = () => {
     return(
         <>
         <nav dir={i18n.language === 'ar' ? 'rtl': 'ltr'}>
-            <div>
+            <div className="nav">
                 {token ? (
                     <>
+                        <Link to='/profile'><img src="../public/blankprofpic.webp"/></Link>
                         <Link to='/dashboard'>{t('nav.dashboard_link')}</Link>
-                        <Link to='/profile'>{t('nav.profile_link')}</Link>
                         <button onClick={handleLogout}>{t('navbar.logout_button')}</button>
                     </>
                 ) : (
                     <>
-                        <Link to="/signin">{t('navbar.signin_link')}</Link>
-                        <Link to="/signup">{t('navbar.signup_link')}</Link>                        
+                        <Link to="/signin">{t('nav.signin_link')}</Link>
+                        <Link to="/signup">{t('nav.signup_link')}</Link>                        
                     </>
 
                 )}

@@ -27,11 +27,36 @@
     "login_prompt": "هل لديك حساب بالفعل؟",
     "login_link": "تسجيل الدخول"
   },
+  "login_page": {
+    "username_label": "اسم المستخدم",
+    "username_placeholder": "اسم المستخدم",
+    "password_label": "كلمة المرور",
+    "password_placeholder": "كلمة المرور",
+    "login_button": "تسجيل الدخول",
+    "register_prompt": "ليس لديك حساب؟",
+    "register_link": "إنشاء حساب",
+    "error_message": "فشل تسجيل الدخول، يرجى المحاولة مرة أخرى."
+  },  
   "validation": {
     "username_required": "اسم المستخدم مطلوب.",
     "username_length": "يجب أن يكون اسم المستخدم 4 أحرف على الأقل.",
     "password_required": "كلمة المرور مطلوبة.",
     "password_invalid": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل وتتضمن حرفًا ورقمًا ورمزًا خاصًا.",
     "passwords_match": "كلمات المرور غير متطابقة."
-  }
+  },
+  "asset": {
+    "identifier": "المعرف",
+    "type": "النوع",
+    "department": "القسم",
+    "location": "الموقع",
+    "assigned_to": "المسند إليه",
+    "not_assigned": "لم يتم إسناده",
+    "status": {
+      "in_use": "قيد الاستخدام",
+      "available": "متوفر",
+      "in_repair": "قيد الإصلاح",
+      "retired": "متقاعد",
+      "lost": "مفقود"
+    }
+  }  
 }
