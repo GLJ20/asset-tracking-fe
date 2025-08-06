@@ -36,6 +36,10 @@
     "register_prompt": "ليس لديك حساب؟",
     "register_link": "إنشاء حساب",
     "error_message": "فشل تسجيل الدخول، يرجى المحاولة مرة أخرى."
+  },
+    "dashboard": {
+    "heading": "الأصول",
+    "add_asset": "إضافة أصل جديد"
   },  
   "validation": {
     "username_required": "اسم المستخدم مطلوب.",

@@ -2,10 +2,14 @@ import { Link, useNavigate } from "react-router-dom"
 import { signout } from "../services/auth"
 import i18n from "../../i18n"
 import { t } from "i18next"
+import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 const NavBar = () => {
     const navigate = useNavigate()
+    const {t, i18n} = useTranslation()
     const token = localStorage.getItem('token')
+    const [isOpen, setIsOpen] = useState(false)
 
     const handleLogout = () => {
         signout()
@@ -16,30 +20,49 @@ const NavBar = () => {
         i18n.changeLanguage(e.target.value)
     }
 
+    const handleToggle = () => {
+        setIsOpen(!isOpen)
+    }
+
     return(
         <>
-        <nav dir={i18n.language === 'ar' ? 'rtl': 'ltr'}>
+        <nav >
             <div className="nav">
-                {token ? (
-                    <>
-                        <Link to='/profile'><img src="../public/blankprofpic.webp"/></Link>
-                        <Link to='/dashboard'>{t('nav.dashboard_link')}</Link>
-                        <button onClick={handleLogout}>{t('navbar.logout_button')}</button>
-                    </>
-                ) : (
-                    <>
-                        <Link to="/signin">{t('nav.signin_link')}</Link>
-                        <Link to="/signup">{t('nav.signup_link')}</Link>                        
-                    </>
+                <div className="nav-right">
+                    <select onChange={handleLangSwitch} value={i18n.language}>
+                        <option value='en'>English</option>
+                        <option value='ar'>العربية</option>
+                    </select>
 
-                )}
-            </div>
+                    {token ? (
+                        <div className="dropdown">
+                            <button id="drop" className="dropbtn" onClick={handleToggle}><img src="/blankprofpic.webp" alt="blankprofile"/></button>
 
-            <div>
-                <select onChange={handleLangSwitch} value={i18n.language}>
-                    <option value='en'>English</option>
-                    <option value='ar'>العربية</option>
-                </select>
+                            {isOpen && (
+                                <div id="myDropdown" className="dropdown-content">
+                                    <Link to='/profile'>{t('nav.profile_link')}</Link>
+                                    <hr className="solid"/>
+                                    <Link to='' onClick={handleLogout}>{t('nav.logout_button')}</Link>
+                                </div>
+                            )}
+                        </div>
+                    ) : (
+                        <>
+                            <Link to="/signin">{t('nav.signin_link')}</Link>
+                            <Link to="/signup">{t('nav.signup_link')}</Link> 
+                        </>
+                    )}
+                </div>                
+
+                <div className="nav-center">
+                    {token && (
+                        <Link to='/dashboard'><h1>{t('nav.dashboard_link')}</h1></Link>
+                    )}
+                </div>
+                
+                <div className="nav-left">
+                    <Link to={token ? '/dashboard' : '/'}><img src="/b1.png" className="logo" alt="logo"/></Link>
+                </div>
             </div>
         </nav>
         </>

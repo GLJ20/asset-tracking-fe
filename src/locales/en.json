@@ -37,6 +37,10 @@
     "register_link": "Register",
     "error_message": "Login Failed, please try again."
   },
+    "dashboard": {
+    "heading": "Assets",
+    "add_asset": "Add Asset"
+  },
   "validation": {
     "username_required": "Username is required.",
     "username_length": "Username must be at least 4 characters.",
