@@ -13,8 +13,8 @@
     "signup_button": "إنشاء حساب"
   },
   "register_page": {
-    "title": "إنشاء حساب",
-    "subtitle": "ابدأ بإنشاء حسابك.",
+    "title": "التسجيل",
+    "subtitle": "ابدأ بإنشاء حسابك",
     "name_label": "الاسم الكامل",
     "name_placeholder": "أدخل اسمك الكامل",
     "username_label": "اسم المستخدم",
@@ -28,6 +28,8 @@
     "login_link": "تسجيل الدخول"
   },
   "login_page": {
+    "title": "تسجيل الدخول",
+    "subtitle": "قم بتسجيل الدخول للوصول إلى نظام إدارة الأصول",
     "username_label": "اسم المستخدم",
     "username_placeholder": "اسم المستخدم",
     "password_label": "كلمة المرور",
@@ -39,7 +41,9 @@
   },
     "dashboard": {
     "heading": "الأصول",
-    "add_asset": "إضافة أصل جديد"
+    "add_asset": "إضافة أصل جديد",
+    "error_loading_assets": "حدث خطأ أثناء تحميل الأصول",
+    "loading_message": "جاري التحميل..."
   },  
   "validation": {
     "username_required": "اسم المستخدم مطلوب.",
@@ -62,5 +66,62 @@
       "retired": "متقاعد",
       "lost": "مفقود"
     }
-  }  
+  },
+  "add_asset_page": {
+        "title": "إضافة أصل جديد",
+        "subtitle": "املأ النموذج لإضافة أصل جديد إلى النظام.",
+        "company_device_id_label": "معرف جهاز الشركة",
+        "company_device_id_placeholder": "مثال: IT-LAP-001",
+        "name_label": "الاسم",
+        "name_placeholder": "مثال: HP Spectre x360",
+        "type_label": "النوع",
+        "type_placeholder": "اختر نوعًا",
+        "brand_label": "الماركة",
+        "brand_placeholder": "مثال: HP",
+        "model_label": "الموديل",
+        "model_placeholder": "مثال: Spectre x360",
+        "serial_number_label": "الرقم التسلسلي",
+        "serial_number_placeholder": "مثال: SN12345678",
+        "purchase_date_label": "تاريخ الشراء",
+        "status_label": "الحالة",
+        "location_label": "الموقع",
+        "location_placeholder": "مثال: مبنى أ، مكتب 5",
+        "department_label": "القسم",
+        "department_placeholder": "مثال: قسم تكنولوجيا المعلومات",
+        "notes_label": "ملاحظات",
+        "notes_placeholder": "أدخل أي معلومات إضافية...",
+        "color_label": "اللون",
+        "color_placeholder": "مثال: أسود أو فضي",
+        "attachments_label": "المرفقات",
+        "attachments_placeholder": "مثال: كيبورد",
+        "create_button": "إنشاء أصل",
+        "add_attachment_button": "أضف مرفق"
+    },
+    "asset_detail_page": {
+        "loading": "جاري تحميل تفاصيل الأصل...",
+        "error": "حدث خطأ أثناء تحميل الأصل.",
+        "not_found": "الأصل غير موجود.",
+        "specifications_title": "المواصفات الكاملة",
+        "company_device_id_label": "المعرف",
+        "type_label": "النوع",
+        "brand_label": "الماركة",
+        "model_label": "الموديل",
+        "serial_number_label": "الرقم التسلسلي",
+        "color_label": "اللون",
+        "purchase_date_label": "تاريخ الشراء",
+        "location_label": "الموقع",
+        "department_label": "القسم",
+        "assigned_to_label": "المسند إليه",
+        "notes_label": "الملاحظات",
+        "attachments_label": "المرفقات",
+        "delete_button": "حذف الأصل",
+        "edit_button": "تعديل الأصل",
+        "not_available": "غير متاح",
+        "error_loading_asset": "حدث خطأ أثناء تحميل الأصل",
+        "loading_message": "جاري التحميل..."
+    }, "edit_asset_page": {
+        "title": "تعديل الأصل",
+        "subtitle": "تحديث تفاصيل الأصل.",
+        "update_button": "تحديث الأصل"
+    } 
 }

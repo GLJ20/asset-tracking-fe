@@ -1,0 +1,135 @@
+.add-asset{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.add-asset form{
+  border: 1px solid rgb(211, 203, 203);
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 50px;
+  background-color: #ffffff;
+  width: 800px;
+  max-width: 90%;
+}
+.add-asset-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em; 
+  margin-bottom: 1em;
+  align-items: start;
+  width: 100%;
+  max-width: 800px;
+}
+.first-column{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-self: flex-start;
+}
+.sec-column{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-self: flex-start;
+}
+
+.add-asset-grid .input-wrapper {
+    min-height: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.add-asset-grid .input-wrapper input, 
+.add-asset-grid .input-wrapper select {
+    height: 45px;
+    padding: 0.6em 1.2em;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    margin: 0.5em 0; 
+}
+.add-asset-grid .input-wrapper select{
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e0;
+  
+}
+.attachments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.submitbtn{
+    width: 100%;
+    background-color: black;
+    font-size: 15px;
+}
+.add-attachment-input{
+    display: flex;
+    gap: 10px
+}
+.add-attachment-input input{
+  flex: 1;
+  padding: 0.6em 1.2em;
+  margin: 0.5em 0;
+  width: 100%;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  background-color: white;
+  height: 45px;
+}
+.add-attachment-input button {
+  flex: 1;
+  padding: 0.6em 1.2em;
+  margin: 0.5em 0;
+  width: 100%;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: black;
+  height: 45px;
+ }
+ .attachments label{
+  font-weight: bold; 
+ }
+.attachment-pills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    margin-top: 10px;
+}
+.attachment-pill{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid #c3c6c9;
+    border-radius: 2px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    gap: 8px;
+}
+.attachment-pill span{
+    color: white;
+    font-weight: 500;
+}
+.remove{
+    border: none;
+    padding: 0;
+    margin-bottom: 2px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.remove:hover{
+    color: red;
+}

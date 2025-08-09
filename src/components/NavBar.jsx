@@ -4,6 +4,7 @@ import i18n from "../../i18n"
 import { t } from "i18next"
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
+import '../styling/components/NavBar.css'
 
 const NavBar = () => {
     const navigate = useNavigate()

@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Login } from "../services/auth"
 import { Link, useNavigate } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import '../styling/pages/SignIn.css'
 
 const SignIn = () => {
     let navigate = useNavigate()
@@ -35,9 +36,11 @@ const SignIn = () => {
 
     }
     return(
-        <div dir={i18n.language === 'ar' ? 'rtl': 'ltr'}>
+        <div dir={i18n.language === 'ar' ? 'rtl': 'ltr'} className="signin">   
         <form onSubmit={handleSubmit}>
-            <div>
+            <h1>{t('login_page.title')}</h1>
+            <p>{t('login_page.subtitle')}</p> 
+            <div className="input-wrapper">
                 <label htmlFor='username'>{t('login_page.username_label')}:</label>
                 <input
                     id='username'
@@ -49,7 +52,7 @@ const SignIn = () => {
                     required
                 />
             </div>
-            <div>
+            <div className="input-wrapper">
                 <label htmlFor='password'>{t('login_page.password_label')}:</label>
                 <input
                     id='password'

@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Register } from "../services/auth"
 import { Link, useNavigate } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import '../styling/pages/SignUp.css'
 
 const SignUp = () => {
     let navigate = useNavigate()
@@ -84,10 +85,10 @@ const SignUp = () => {
 
     return(
         <>
-        <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
-            <h4>{t('register_page.title')}</h4>
-            <p>{t('register_page.subtitle')}</p>
+        <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} className="signup">
             <form onSubmit={handleSubmit}>
+            <h1>{t('register_page.title')}</h1>
+            <p>{t('register_page.subtitle')}</p>
                 <div className="input-wrapper">
                     <label htmlFor="name">{t('register_page.name_label')}</label>
                     <input
@@ -150,11 +151,11 @@ const SignUp = () => {
                 <button type='submit' disabled={formvalidation()}>
                     {t('register_page.create_account_button')}
                 </button>
-            </form>
-            <p>
-                {t('register_page.login_prompt')}{" "}
-                <Link to="/signin">{t('register_page.login_link')}</Link>
-            </p>            
+                <p>
+                    {t('register_page.login_prompt')}{" "}
+                    <Link to="/signin">{t('register_page.login_link')}</Link>
+                </p>  
+            </form>          
         </div>
         </>
     )

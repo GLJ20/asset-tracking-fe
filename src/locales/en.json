@@ -14,7 +14,7 @@
   },
   "register_page": {
     "title": "Create an Account",
-    "subtitle": "Get started with your account.",
+    "subtitle": "Get started with your account",
     "name_label": "Full Name",
     "name_placeholder": "Enter your full name",
     "username_label": "Username",
@@ -28,6 +28,8 @@
     "login_link": "Sign In"
   },
     "login_page": {
+    "title": "Login",
+    "subtitle": "Log in to access the asset management system",
     "username_label": "Username",
     "username_placeholder": "username",
     "password_label": "Password",
@@ -39,7 +41,9 @@
   },
     "dashboard": {
     "heading": "Assets",
-    "add_asset": "Add Asset"
+    "add_asset": "Add Asset",
+    "error_loading_assets": "Error loading assets",
+    "loading_message": "Loading..."
   },
   "validation": {
     "username_required": "Username is required.",
@@ -62,5 +66,63 @@
       "retired": "Retired",
       "lost": "Lost"
     }
-  }
+  },
+  "add_asset_page": {
+        "title": "Add New Asset",
+        "subtitle": "Fill out the form to add a new asset to the system.",
+        "company_device_id_label": "Company Device ID",
+        "company_device_id_placeholder": "E.g., IT-LAP-001",
+        "name_label": "Name",
+        "name_placeholder": "E.g., HP Spectre x360",
+        "type_label": "Type",
+        "type_placeholder": "Select a type",
+        "brand_label": "Brand",
+        "brand_placeholder": "E.g., HP",
+        "model_label": "Model",
+        "model_placeholder": "E.g., Spectre x360",
+        "serial_number_label": "Serial Number",
+        "serial_number_placeholder": "E.g., SN12345678",
+        "purchase_date_label": "Purchase Date",
+        "status_label": "Status",
+        "location_label": "Location",
+        "location_placeholder": "E.g., Building A, Desk 5",
+        "department_label": "Department",
+        "department_placeholder": "E.g., IT Department",
+        "notes_label": "Notes",
+        "notes_placeholder": "Any additional information...",
+        "color_label": "Color",
+        "color_placeholder": "E.g., Black or Silver",
+        "attachments_label": "Attachments",
+        "attachments_placeholder": "E.g., Keyboard",
+        "create_button": "Create Asset",
+        "add_attachment_button": "Add Attachment"
+    },
+    "asset_detail_page": {
+        "loading": "Loading asset details...",
+        "error": "Error loading asset.",
+        "not_found": "Asset not found.",
+        "specifications_title": "Full Specifications",
+        "company_device_id_label": "ID",
+        "type_label": "Type",
+        "brand_label": "Brand",
+        "model_label": "Model",
+        "serial_number_label": "Serial Number",
+        "color_label": "Color",
+        "purchase_date_label": "Purchase Date",
+        "location_label": "Location",
+        "department_label": "Department",
+        "assigned_to_label": "Assigned To",
+        "notes_label": "Notes",
+        "attachments_label": "Attachments",
+        "delete_button": "Delete Asset",
+        "edit_button": "Edit Asset",
+        "not_available": "N/A",
+        "error_loading_asset": "Error loading asset",
+        "loading_message": "Loading..."
+    },
+    "edit_asset_page": {
+        "title": "Edit Asset",
+        "subtitle": "Update the details of the asset.",
+        "update_button": "Update Asset"
+    }
 }
