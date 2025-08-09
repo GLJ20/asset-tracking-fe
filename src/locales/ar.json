@@ -119,9 +119,13 @@
         "not_available": "غير متاح",
         "error_loading_asset": "حدث خطأ أثناء تحميل الأصل",
         "loading_message": "جاري التحميل..."
-    }, "edit_asset_page": {
+    }, 
+    "edit_asset_page": {
         "title": "تعديل الأصل",
         "subtitle": "تحديث تفاصيل الأصل.",
-        "update_button": "تحديث الأصل"
+        "update_button": "تحديث الأصل",
+        "save_button": "حفظ",
+        "cancel_button": "إلغاء",
+        "remove_button": "إزالة"
     } 
 }

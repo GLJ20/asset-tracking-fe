@@ -16,19 +16,14 @@ const EditAsset = () => {
     const [attachments, setAttachments] = useState(asset.attachments || [])
     const [newAttachment, setNewAttachment] = useState(''); 
 
-
-    // const handleClickOpen = () => {
-    //     setOpen(true)
-    // }
-
-    // const handleClose = () => {
-    //     setOpen(false)
-    // }
-
     useEffect(() => {
         const handleAsset = async () => {
             try {
                 const data = await GetAssetById(assetid)
+
+                if(data.purchaseDate) {
+                    data.purchaseDate = new Date(data.purchaseDate).toISOString().split('T')[0]
+                }
                 setAsset(data)
                 setAttachments(data.attachments || [])
             } catch (error) {
@@ -48,15 +43,19 @@ const EditAsset = () => {
 
     const handleAddAttachment = () => {
         if (newAttachment.trim() !== '') {
-            const updatedAttachments = asset.attachments ? [...asset.attachments, newAttachment.trim()] : [newAttachment.trim()];
-            setAsset({ ...asset, attachments: updatedAttachments });
-            setNewAttachment(''); 
+            //start by creating a new array of the attachments
+            //then check if attachments array isnt null or undefined
+            //if it is not null then copy all values from existitng array and add to it
+            //the new attachment, if not then create a new array with the attachment
+            const updatedAttachments = asset.attachments ? [...asset.attachments, newAttachment.trim()] : [newAttachment.trim()]
+            setAsset({ ...asset, attachments: updatedAttachments })
+            setNewAttachment('')
         }
-    };
+    }
     const handleRemoveAttachment = (attachmentToRemove) => {
-        const updatedAttachments = asset.attachments.filter(attachment => attachment !== attachmentToRemove);
-        setAsset({ ...asset, attachments: updatedAttachments });
-    };
+        const updatedAttachments = asset.attachments.filter(attachment => attachment !== attachmentToRemove)
+        setAsset({ ...asset, attachments: updatedAttachments })
+    }
 
     if(loading){
         return (
@@ -69,12 +68,6 @@ const EditAsset = () => {
 
     if(err){
         return <h1>{t('dashboard.error_loading_assets')}</h1>
-    }
-    const addAttachment = () => {
-        setAttachments([...attachments, ''])
-        if (attachment.trim() !== '') {
-            setAttachments([...attachments, attachments])
-        }
     }
 
     const removeAttachment = (index) => {
@@ -94,6 +87,7 @@ const EditAsset = () => {
             await UpdateAsset(assetid, asset)
             // setOpen(false)
             // setEdited(true)
+            navigate(`/assets/${assetid}`)
         } catch (error) {
             console.error("Error updating asset", error)
             setOpen(false)
@@ -237,17 +231,18 @@ const EditAsset = () => {
                     </div>
                 </div>
 
-                <div className="attachments-section">
+                <div className="attachments">
                     <label>{t('add_asset_page.attachments_label')}</label>
-                        {attachments.map((attachment, index) => (
+                    {/* This is to edit an existing attachment */}
+                        {asset.attachments.map((attachment, index) => (
                             <div key={index} className="attachment-input-row">
                                 <input
                                     type="text"
                                     value={attachment}
-                                    onChange={(e) => updateAttachment(index, e.target.value)}
-                                    placeholder="e.g., keyboard, mouse, webcam"
+                                    onChange={(e) => updateAttachment(index, e.target.value)} 
+                                    id="existingAttachment"                                  
                                 />
-                                <button type="button" onClick={() => removeAttachment(index)}>Remove</button>
+                                <button type="button" onClick={() => removeAttachment(index)}>{t('edit_asset_page.remove_button')}</button>
                             </div>
                         ))}
 
@@ -259,7 +254,7 @@ const EditAsset = () => {
                                 value={newAttachment}
                                 onChange={(e) => setNewAttachment(e.target.value)}
                             />
-                            <button type="button" onClick={handleAddAttachment}>
+                            <button type="button" onClick={handleAddAttachment} className="submitbtn">
                                 {t('add_asset_page.add_attachment_button')}
                             </button>
                         </div>
@@ -283,12 +278,18 @@ const EditAsset = () => {
                             rows="4"
                         />
                     </div>
-                <button type="submit">
-                    {t('add_asset_page.create_button')}
-                </button>
-                <button type="submit">
-                    {t('add_asset_page.create_button')}
-                </button>               
+                    <div className="action-buttons">
+                        <button type="submit">
+                            {t('edit_asset_page.save_button')}
+                        </button>
+                        <Link to={`/assets/${assetid}`}>
+                            <button type="button" className="cancel">
+                                {t('edit_asset_page.cancel_button')}
+                            </button>                         
+                        </Link>
+
+                    </div>
+              
             </form>
         </div>
         </>

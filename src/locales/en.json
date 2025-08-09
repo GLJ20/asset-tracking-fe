@@ -123,6 +123,9 @@
     "edit_asset_page": {
         "title": "Edit Asset",
         "subtitle": "Update the details of the asset.",
-        "update_button": "Update Asset"
+        "update_button": "Update Asset",
+        "save_button": "Save",
+        "cancel_button": "Cancel",
+        "remove_button": "Remove"
     }
 }

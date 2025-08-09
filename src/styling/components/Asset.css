@@ -12,7 +12,7 @@
   margin: 1rem;
   cursor: pointer;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  width: 425px;
+  width: 400px;
 }
 
 .asset-card:hover {
@@ -50,4 +50,7 @@
 .asset-details-grid .label {
   font-weight: 600;
   color: var(--label-color);
+}
+a{
+    text-decoration: none;
 }

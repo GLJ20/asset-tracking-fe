@@ -94,32 +94,40 @@
     font-size: 15px;
 }
 .add-attachment-input{
-    display: flex;
-    gap: 10px
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em; 
+    margin-bottom: 1em;
+    align-items: start;
+    width: 100%;
+    max-width: 900px;
 }
 .add-attachment-input input{
-  flex: 1;
-  padding: 0.6em 1.2em;
-  margin: 0.5em 0;
-  width: 100%;
-  border: 1px solid #cbd5e0;
-  border-radius: 0.5rem;
-  font-size: 1.1rem;
-  box-sizing: border-box;
-  background-color: white;
-  height: 45px;
+    padding: 0.6em 1.2em;
+    margin: 0.5em 0;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    background-color: white;
+    height: 45px;
+    width: 100%; 
 }
 .add-attachment-input button {
-  flex: 1;
   padding: 0.6em 1.2em;
-  margin: 0.5em 0;
-  width: 100%;
-  border: 1px solid #cbd5e0;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background-color: black;
-  height: 45px;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    height: 45px;
+    cursor: pointer;
+    width: 100%;
+ }
+ .add-attachment-input button:hover{
+    background-color: #242323;
  }
  .attachments label{
   font-weight: bold; 
@@ -128,7 +136,8 @@
     display: flex;
     flex-wrap: wrap;
     gap:8px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 13px;
 }
 .attachment-pill{
     display: inline-flex;
@@ -160,4 +169,80 @@
 }
 .remove:hover{
     color: red;
+}
+
+.attachment-input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em; 
+    margin-bottom: 1em;
+    align-items: start;
+    width: 100%;
+    max-width: 900px;
+}
+
+.attachment-input-row input {
+    padding: 0.6em 1.2em;
+    margin: 0.5em 0;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    background-color: white;
+    height: 45px;
+    width: 100%; 
+}
+
+.attachment-input-row button {
+    padding: 0.6em 1.2em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #dc3545;
+    color: white;
+    height: 45px;
+    cursor: pointer;
+    width: 100%;
+}
+.attachment-input-row button:hover{
+    background-color: #f3011a;
+}
+.action-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em; 
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+    max-width: 900px;
+}
+.action-buttons button,
+.action-buttons a { 
+    justify-self: center;
+}
+
+.action-buttons button{
+    padding: 0.6em 1.2em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    height: 45px;
+    cursor: pointer;
+    width: 20%;
+}
+.action-buttons button:hover{
+    background-color: #242323;
+}
+.action-buttons .cancel{
+    width: 100%;
+    background-color: #dc3545;
+}
+.cancel button:hover{
+    background-color: #f3011a;
 }

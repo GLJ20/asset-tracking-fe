@@ -2,7 +2,6 @@ import { useParams, useNavigate, Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { GetAssetById } from "../services/asset"
 import { useTranslation } from "react-i18next"
-import EditAsset from "../components/EditAsset"
 import '../styling/pages/AssetDetails.css'
 
 const AssetDetails = () => {
@@ -12,6 +11,7 @@ const AssetDetails = () => {
     const [err, setErr] = useState(null)
     let navigate = useNavigate()
     const {t, i18n} = useTranslation()
+    
 
     const statuses = {
         'In Use': 'asset.status.in_use',
@@ -137,7 +137,6 @@ const AssetDetails = () => {
                     <button className="delete-button">
                         {t('asset_detail_page.delete_button')}
                     </button>
-                    <EditAsset/>
                 </div>
             </div>
         </div>
