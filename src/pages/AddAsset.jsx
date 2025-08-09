@@ -223,7 +223,6 @@ const AddAsset = () => {
                     </div>
                 </div>
 
-                
                 <div className="input-wrapper">
                     <label htmlFor="notes">{t('add_asset_page.notes_label')}</label>
                     <textarea
