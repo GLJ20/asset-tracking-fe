@@ -118,7 +118,9 @@
         "edit_button": "تعديل الأصل",
         "not_available": "غير متاح",
         "error_loading_asset": "حدث خطأ أثناء تحميل الأصل",
-        "loading_message": "جاري التحميل..."
+        "loading_message": "جاري التحميل...",
+        "log_title": "سجل الصيانة",
+        "add_log": "إضافة سجل صيانة"
     }, 
     "edit_asset_page": {
         "title": "تعديل الأصل",
@@ -127,5 +129,25 @@
         "save_button": "حفظ",
         "cancel_button": "إلغاء",
         "remove_button": "إزالة"
-    } 
+    },
+    "log": {
+      "title": "إضافة سجل صيانة",
+      "maintenance_date_label": "تاريخ الصيانة",
+      "description": "الوصف",
+      "description_placeholder": "وصف الصيانة التي تم إجراؤها...",
+      "performedBy_label": "تم بواسطة",
+      "performedBy_placeholder": "اسم الشخص الذي قام بالصيانة",
+      "cost_label": "التكلفة",
+      "cost_placeholder": "مثال: 10.50",
+      "notes_label": "ملاحظات",
+      "notes_placeholder": "أي ملاحظات إضافية...",
+      "submit_button": "إرسال السجل"
+    },
+    "log_display": {
+      "date_label": "التاريخ",
+      "description_label": "الوصف",
+      "performed_by_label": "تم بواسطة",
+      "cost_label": "التكلفة",
+      "notes_label": "ملاحظات"
+  } 
 }

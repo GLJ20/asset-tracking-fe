@@ -85,8 +85,6 @@ const EditAsset = () => {
 
        try {
             await UpdateAsset(assetid, asset)
-            // setOpen(false)
-            // setEdited(true)
             navigate(`/assets/${assetid}`)
         } catch (error) {
             console.error("Error updating asset", error)

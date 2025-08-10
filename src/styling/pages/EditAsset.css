@@ -1,6 +1,6 @@
 .back{
-  position: fixed;
-  top: 20px;
+  position: absolute;
+  top: 10px;
   left: 20px;  
   width: 70px;
   height: 30px;
@@ -9,19 +9,18 @@
   cursor: pointer;
   transition: transform 0.2s ease;
   z-index: 10;
-  position: absolute;
 }
 .back:hover{
     transform: scale(1.1);
 }
 [dir='rtl'] .back{
-    left:auto;
-    right: 20px;
+    left:85%;
+    right: auto;
     transform: scaleX(-1);
 }
 [dir='ltr'] .back{
-    left:20px;
-    right: auto;
+    left:auto;
+    right: 85%;
     transform: none;
 }
 .edit-asset{

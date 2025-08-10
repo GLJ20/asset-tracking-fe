@@ -118,7 +118,9 @@
         "edit_button": "Edit Asset",
         "not_available": "N/A",
         "error_loading_asset": "Error loading asset",
-        "loading_message": "Loading..."
+        "loading_message": "Loading...",
+        "log_title": "Maintenance Logs",
+        "add_log": "Add Maintenance Log"
     },
     "edit_asset_page": {
         "title": "Edit Asset",
@@ -127,5 +129,25 @@
         "save_button": "Save",
         "cancel_button": "Cancel",
         "remove_button": "Remove"
-    }
+    },
+    "log": {
+      "title": "Add Maintenance Log",
+      "maintenance_date_label": "Maintenance Date",
+      "description": "Description",
+      "description_placeholder": "Describe the maintenance performed...",
+      "performedBy_label": "Performed By",
+      "performedBy_placeholder": "Name of the person who performed the maintenance",
+      "cost_label": "Cost",
+      "cost_placeholder": "e.g., 10.50",
+      "notes_label": "Notes",
+      "notes_placeholder": "Any additional notes...",
+      "submit_button": "Submit Log"
+    },
+    "log_display": {
+      "date_label": "Date",
+      "description_label": "Description",
+      "performed_by_label": "Performed By",
+      "cost_label": "Cost",
+      "notes_label": "Notes"
+  }
 }

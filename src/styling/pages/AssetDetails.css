@@ -5,6 +5,7 @@
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: relative;
 }
 .asset-detail-header{
   display: flex;
@@ -66,4 +67,40 @@
 }
 .edit-button{
   background-color: #000000;
+}
+
+.back{
+  position: absolute !important; 
+  top: 80px !important;
+  width: 70px;
+  height: 30px;
+  cursor: pointer !important;
+  z-index: 1000 !important;
+  transition: transform 0.2s ease !important;
+  
+}
+.back:hover{
+    transform: scale(1.1);
+}
+/* [dir='rtl'] .back{
+    left:70%;
+    right: 20px;
+    transform: scaleX(-1);
+}
+[dir='ltr'] .back{
+    left:auto;
+    right: 80%;
+    transform: none;
+} */
+
+.back.en {
+    left: 20px !important;
+    right: auto !important;
+    transform: none !important;
+}
+
+.back.ar {
+    left: auto !important;
+    right: 20px !important;
+    transform: scaleX(-1) !important;
 }

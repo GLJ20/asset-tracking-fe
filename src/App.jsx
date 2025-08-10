@@ -9,7 +9,7 @@ import Dashboard from './pages/Dashboard'
 import AddAsset from './pages/AddAsset'
 import AssetDetails from './pages/AssetDetails'
 import EditAsset from './pages/EditAsset'
-
+import AddLog from './pages/AddLog'
 
 
 const App = () => {
@@ -25,6 +25,7 @@ const App = () => {
         <Route path='/assets/:assetid' element={<AssetDetails/>}/>
         <Route path='/addasset' element={<AddAsset/>}/>
         <Route path='/edit/:assetid' element={<EditAsset />}/>
+        <Route path='/assets/:assetid/addlog' element={<AddLog />}/>
       </Routes>
     </>
   )

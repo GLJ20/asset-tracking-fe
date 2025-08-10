@@ -2,6 +2,7 @@ import { useParams, useNavigate, Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { GetAssetById } from "../services/asset"
 import { useTranslation } from "react-i18next"
+import Log from "../components/Log"
 import '../styling/pages/AssetDetails.css'
 
 const AssetDetails = () => {
@@ -26,9 +27,6 @@ const AssetDetails = () => {
             try {
                 setLoading(true)
                 setErr(null)
-
-                console.log('Attempting to fetch asset with ID:', assetid)
-                console.log('Token in localStorage:', localStorage.getItem('token') ? 'Present' : 'Missing')
                 const data = await GetAssetById(assetid)
                 
                 setAsset(data)
@@ -61,6 +59,7 @@ const AssetDetails = () => {
     const statusTranslation = statuses[asset.status] || 'asset.status.in_use'
     return(
         <>
+        <Link to='/dashboard'><img src="/arrow.png" className={`back ${i18n.language === 'ar' ? 'ar' : 'en'}`} alt="arrowtogopreviouspage"/></Link>
         <div className="asset-details" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
             <div className="asset-detail-header">
                 <div>
@@ -140,6 +139,7 @@ const AssetDetails = () => {
                 </div>
             </div>
         </div>
+        <Log assetid={assetid}/>
         </>
     )
 }
