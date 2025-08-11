@@ -11,6 +11,7 @@ const NavBar = () => {
     const {t, i18n} = useTranslation()
     const token = localStorage.getItem('token')
     const [isOpen, setIsOpen] = useState(false)
+    // const [menuVisible, setMenuVisible] = useState(false)
 
     const handleLogout = () => {
         signout()
@@ -22,7 +23,8 @@ const NavBar = () => {
     }
 
     const handleToggle = () => {
-        setIsOpen(!isOpen)
+        setIsOpen(true)
+        // setMenuVisible(true)
     }
 
     return(
@@ -39,13 +41,15 @@ const NavBar = () => {
                         <div className="dropdown">
                             <button id="drop" className="dropbtn" onClick={handleToggle}><img src="/blankprofpic.webp" alt="blankprofile"/></button>
 
-                            {isOpen && (
+                            {isOpen ? (
                                 <div id="myDropdown" className="dropdown-content">
                                     <Link to='/profile'>{t('nav.profile_link')}</Link>
                                     <hr className="solid"/>
                                     <Link to='' onClick={handleLogout}>{t('nav.logout_button')}</Link>
                                 </div>
-                            )}
+                            ) : null}
+
+                            {isOpen ? (<div className="overlay" onClick={() => setIsOpen(false)}/>): null}
                         </div>
                     ) : (
                         <>
