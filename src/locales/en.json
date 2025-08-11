@@ -149,5 +149,12 @@
       "performed_by_label": "Performed By",
       "cost_label": "Cost",
       "notes_label": "Notes"
-  }
+    },
+    "edit_log_page": {
+    "title": "Edit Maintenance Log",
+    "subtitle": "Use the form below to update the maintenance log details.",
+    "save_button": "Save Changes",
+    "cancel_button": "Cancel"
+    }
+
 }

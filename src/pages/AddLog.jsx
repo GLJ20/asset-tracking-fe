@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { CreateLog } from "../services/logs"
-import { useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams, Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import '../styling/pages/AddLog.css'
 
@@ -41,6 +41,7 @@ const AddLog = () => {
     return(
         <>
         <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} className="addlog">
+            <Link to={`/assets/${assetid}`}><img src="/arrow.png" className='back' alt="arrowtogopreviouspage"/></Link>
             <form onSubmit={handleSubmit}>
                 <h2>{t('log.title')}</h2>
                 <div className="input-wrapper">

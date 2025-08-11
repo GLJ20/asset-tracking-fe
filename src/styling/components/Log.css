@@ -23,7 +23,7 @@
   margin: 0;
   flex: 1;
   margin-top: 15px;
-  margin-right: 18px;
+  margin-right: 28px;
 }
 .header-log button{
   background-color: black;
@@ -34,7 +34,7 @@
   cursor: pointer;
   font-weight: 600;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 24px;
   font-size: 1rem;
 }
 /* .log-card{
@@ -43,7 +43,29 @@
 .log{
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  padding: 2px 4px;
+  box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  /* padding: 2px 4px; */
   margin: 5px auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;  
+  width: 750px;
+  justify-content: space-between;
+}
+.log-content{
+    padding: 16px 20px;
+}
+.edit-log{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    
+    
+}
+.edit-log img{
+    width: 34px;
+    height: 22px;
+    margin-bottom: 110px;
+    margin-left: 20px;
 }

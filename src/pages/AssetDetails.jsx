@@ -59,7 +59,7 @@ const AssetDetails = () => {
     const statusTranslation = statuses[asset.status] || 'asset.status.in_use'
     return(
         <>
-        <Link to='/dashboard'><img src="/arrow.png" className={`back ${i18n.language === 'ar' ? 'ar' : 'en'}`} alt="arrowtogopreviouspage"/></Link>
+        <Link to='/dashboard'><img src="/arrow.png" className={`back-asset-details ${i18n.language === 'ar' ? 'ar' : 'en'}`} alt="arrowtogopreviouspage"/></Link>
         <div className="asset-details" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
             <div className="asset-detail-header">
                 <div>
@@ -116,7 +116,8 @@ const AssetDetails = () => {
 
                 <div className="attachments">
                     <h4>{t('asset_detail_page.attachments_label')}:</h4>
-                    {asset.attachments && asset.attachments.length > 0 ? (
+                    <div className="attachments-cont">
+                        {asset.attachments && asset.attachments.length > 0 ? (
                         asset.attachments.map((attachment, index) => (
                             <span key={index} className="attachment">
                                 {attachment}
@@ -125,6 +126,8 @@ const AssetDetails = () => {
                     ) : (
                         t('asset_detail_page.not_available')
                     )}
+                    </div>
+                    
                 </div>
 
                 <div className="action-container">

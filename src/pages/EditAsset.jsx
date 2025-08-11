@@ -70,10 +70,6 @@ const EditAsset = () => {
         return <h1>{t('dashboard.error_loading_assets')}</h1>
     }
 
-    const removeAttachment = (index) => {
-        setAttachments(attachments.filter((_, i) => i !== index))
-    }
-
     const updateAttachment = (index, value) => {
         const updated = [...attachments]
         updated[index] = value
@@ -95,7 +91,7 @@ const EditAsset = () => {
     return(
         <>
         <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} className="edit-asset">
-            <Link to={`/assets/${assetid}`}><img src="/arrow.png" className='back' alt="arrowtogopreviouspage"/></Link>
+            <Link to={`/assets/${assetid}`}><img src="/arrow.png" className='back-edit-asset' alt="arrowtogopreviouspage"/></Link>
             <form onSubmit={handleSubmit}>
                 <h1>{t('edit_asset_page.title')}</h1>
                 <p>{t('edit_asset_page.subtitle')}</p>
@@ -240,7 +236,7 @@ const EditAsset = () => {
                                     onChange={(e) => updateAttachment(index, e.target.value)} 
                                     id="existingAttachment"                                  
                                 />
-                                <button type="button" onClick={() => removeAttachment(index)}>{t('edit_asset_page.remove_button')}</button>
+                                <button type="button" onClick={() => handleRemoveAttachment(attachment)}>{t('edit_asset_page.remove_button')}</button>
                             </div>
                         ))}
 

@@ -149,5 +149,11 @@
       "performed_by_label": "تم بواسطة",
       "cost_label": "التكلفة",
       "notes_label": "ملاحظات"
-  } 
+    },
+    "edit_log_page": {
+    "title": "تعديل سجل الصيانة",
+    "subtitle": "استخدم النموذج أدناه لتحديث تفاصيل سجل الصيانة.",
+    "save_button": "حفظ",
+    "cancel_button": "إلغاء"
+    } 
 }

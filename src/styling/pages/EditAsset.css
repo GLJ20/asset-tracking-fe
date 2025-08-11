@@ -1,7 +1,6 @@
-.back{
+.back-edit-asset{
   position: absolute;
-  top: 10px;
-  left: 20px;  
+  top: 6px !important;  
   width: 70px;
   height: 30px;
   display: block;
@@ -10,15 +9,15 @@
   transition: transform 0.2s ease;
   z-index: 10;
 }
-.back:hover{
+.back-edit-asset:hover{
     transform: scale(1.1);
 }
-[dir='rtl'] .back{
-    left:85%;
+[dir='rtl'] .back-edit-asset{
+    left:94%;
     right: auto;
     transform: scaleX(-1);
 }
-[dir='ltr'] .back{
+[dir='ltr'] .back-edit-asset{
     left:auto;
     right: 85%;
     transform: none;
@@ -32,7 +31,6 @@
   padding: 20px;
 }
 .edit-asset form{
-  border: 1px solid rgb(211, 203, 203);
   border-radius: 8px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   padding: 50px;

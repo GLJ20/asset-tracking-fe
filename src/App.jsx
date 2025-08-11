@@ -10,6 +10,7 @@ import AddAsset from './pages/AddAsset'
 import AssetDetails from './pages/AssetDetails'
 import EditAsset from './pages/EditAsset'
 import AddLog from './pages/AddLog'
+import EditLog from './pages/EditLog'
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/addasset' element={<AddAsset/>}/>
         <Route path='/edit/:assetid' element={<EditAsset />}/>
         <Route path='/assets/:assetid/addlog' element={<AddLog />}/>
+        <Route path='/assets/:assetid/:logid' element={<EditLog />}/>
       </Routes>
     </>
   )

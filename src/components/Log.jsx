@@ -33,11 +33,14 @@ const Log = ({assetid}) => {
                 {logs.length > 0 ? (
                 logs.map(log => (
                     <div key={log._id} className="log">
-                        <p>{new Date(log.maintenanceDate).toLocaleDateString()}</p>
-                        <h3>{log.description}</h3>
-                        <p>{t('log_display.performed_by_label')}: {log.performedBy}</p>
-                        <p>{t('log_display.cost_label')}: {log.cost}</p>
-                        <p>{t('log_display.notes_label')}: {log.notes}</p>
+                        <div className="log-content">
+                            <p>{new Date(log.maintenanceDate).toLocaleDateString()}</p>
+                            <h3>{log.description}</h3>
+                            <p>{t('log_display.performed_by_label')}: {log.performedBy}</p>
+                            <p>{t('log_display.cost_label')}: {log.cost}</p>
+                            <p>{t('log_display.notes_label')}: {log.notes}</p>
+                        </div>
+                        <Link to={`/assets/${assetid}/${log._id}`}><button className="edit-log"><img src="/edit.webp"/></button></Link>
                     </div>
                 ))
 

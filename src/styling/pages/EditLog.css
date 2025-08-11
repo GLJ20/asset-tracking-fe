@@ -1,0 +1,49 @@
+.edit-log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.edit-log form{
+    border: 1px solid rgb(211, 203, 203);
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 50px;
+    background-color: #ffffff;
+    width: 500px;
+    max-width: 90%;
+}
+
+.action{
+    display: flex;
+    gap: 2rem;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.action button{
+    padding: 0.6em 1.2em;
+   
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    height: 45px;
+    cursor: pointer;
+}
+.edit-log button{
+    width:26%;
+    background-color: black;
+}
+.edit-log button:hover{
+    background-color: #242323;
+}
+.action .cancel{
+    width: 100%;
+    background-color: #dc3545;
+}
+.action .cancel:hover{
+    background-color: #f3011a;
+}
