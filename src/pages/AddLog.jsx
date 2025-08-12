@@ -41,7 +41,7 @@ const AddLog = () => {
     return(
         <>
         <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} className="addlog">
-            <Link to={`/assets/${assetid}`}><img src="/arrow.png" className='back' alt="arrowtogopreviouspage"/></Link>
+            <Link to={`/assets/${assetid}`}><img src="/arrow.png" className='back-add-log-pg' alt="arrowtogopreviouspage"/></Link>
             <form onSubmit={handleSubmit}>
                 <h2>{t('log.title')}</h2>
                 <div className="input-wrapper">
@@ -97,7 +97,7 @@ const AddLog = () => {
                     />
                 </div>
                 <button type="submit">
-                        {t('log.submit_button')}
+                    {t('log.submit_button')}
                 </button>
             </form>
         </div>

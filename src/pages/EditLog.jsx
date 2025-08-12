@@ -68,7 +68,7 @@ const EditLog = () => {
     return(
         <>
         <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} className="edit-log">
-            <Link to={`/assets/${assetid}`}><img src="/arrow.png" className='back' alt="arrowtogopreviouspage"/></Link>
+            <Link to={`/assets/${assetid}`}><img src="/arrow.png" className='back-edit-log-pg' alt="arrowtogopreviouspage"/></Link>
             <form onSubmit={handleSubmit}>
                 <h1>{t('edit_log_page.title')}</h1>
                 <p>{t('edit_log_page.subtitle')}</p>
@@ -125,7 +125,7 @@ const EditLog = () => {
                         rows="4"
                     />
                 </div>
-                
+
                 <div className="action">
                     <button type="submit">
                         {t('edit_log_page.save_button')}

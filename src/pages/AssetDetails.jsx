@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { GetAssetById } from "../services/asset"
 import { useTranslation } from "react-i18next"
 import Log from "../components/Log"
+import DeleteAssetBtn from "../components/DeleteAsset"
 import '../styling/pages/AssetDetails.css'
 
 const AssetDetails = () => {
@@ -136,9 +137,10 @@ const AssetDetails = () => {
                         {t('asset_detail_page.edit_button')}
                     </button>
                     </Link>
-                    <button className="delete-button">
+                    {/* <button className="delete-button">
                         {t('asset_detail_page.delete_button')}
-                    </button>
+                    </button> */}
+                    <DeleteAssetBtn assetid={assetid}/>
                 </div>
             </div>
         </div>

@@ -11,9 +11,39 @@
     background-color: #ffffff;
     width: 500px;
     max-width: 90%;
+    margin-bottom: 20px;
 }
 
 .addlog button{
     width: 100%;
     background-color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.addlog button:hover{
+    background-color: #242323;
+}
+.back-add-log-pg{
+  position: absolute;
+  top: 110px !important;  
+  width: 70px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;     
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 10;
+}
+.back-add-log-pg:hover{
+    transform: scale(1.1);
+}
+[dir='rtl'] .back-add-log-pg{
+    left:94%;
+    right: auto;
+    transform: scaleX(-1);
+}
+[dir='ltr'] .back-add-log-pg{
+    left:auto;
+    right: 85%;
+    transform: none;
 }

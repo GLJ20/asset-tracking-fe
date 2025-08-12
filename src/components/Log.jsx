@@ -2,11 +2,19 @@ import { useTranslation } from "react-i18next"
 import { GetLogs } from "../services/logs"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import DeleteLogBtn from "./DeleteLog"
 import '../styling/components/Log.css'
+import { useNavigate } from "react-router-dom"
 
 const Log = ({assetid}) => {
     const [logs, setLogs] = useState([])
     const {t, i18n} = useTranslation()
+    let navigate = useNavigate()
+    const [deleted, setDeleted] = useState(false)
+
+    // const handleDelete = () => {
+    //     navigate(`/assets/${assetid}`)
+    // }
 
     useEffect(() => {
         const handleLogs = async () => {
@@ -19,7 +27,7 @@ const Log = ({assetid}) => {
         if (assetid) {
             handleLogs()
         }
-    }, [assetid]) //re-run if asset id changes
+    }, [assetid, deleted]) //re-run if asset id changes
 
     return(
         <>
@@ -40,7 +48,10 @@ const Log = ({assetid}) => {
                             <p>{t('log_display.cost_label')}: {log.cost}</p>
                             <p>{t('log_display.notes_label')}: {log.notes}</p>
                         </div>
-                        <Link to={`/assets/${assetid}/${log._id}`}><button className="edit-log"><img src="/edit.webp"/></button></Link>
+                        <div className="actions-for-log"> 
+                            <Link to={`/assets/${assetid}/${log._id}`}><button className="edit-log-btn"><img src="/edit.webp" alt="edit"/></button></Link>
+                            <DeleteLogBtn assetid={assetid} logid={log._id} setDeleted={setDeleted}/>
+                        </div>
                     </div>
                 ))
 

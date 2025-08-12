@@ -153,8 +153,15 @@
     "edit_log_page": {
     "title": "Edit Maintenance Log",
     "subtitle": "Use the form below to update the maintenance log details.",
-    "save_button": "Save Changes",
+    "save_button": "Save",
     "cancel_button": "Cancel"
-    }
+    },
+    "delete_dialog": {
+    "open_button": "Delete Asset",
+    "title": "Confirm Deletion",
+    "description": "Are you sure you want to permanently delete this asset? This action cannot be undone.",
+    "cancel_button": "Cancel",
+    "delete_button": "Delete"
+  }
 
 }

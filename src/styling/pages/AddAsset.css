@@ -63,7 +63,8 @@
 .submitbtn{
     width: 100%;
     background-color: black;
-    font-size: 15px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .submitbtn:hover{
     background-color: #242323;
