@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "dashboard_link": "Assets",
+    "profile_link": "Profile",
+    "logout_button": "Logout",
+    "signin_link": "Sign In",
+    "signup_link": "Sign Up"
+  },
+  "landing_page": {
+    "title": "Asset Tracking Management",
+    "description": "Manage and track your company's assets and maintenance needs with ease.",
+    "signin_button": "Sign In",
+    "signup_button": "Sign Up"
+  },
+  "register_page": {
+    "title": "Create an Account",
+    "subtitle": "Get started with your account",
+    "name_label": "Full Name",
+    "name_placeholder": "Enter your full name",
+    "username_label": "Username",
+    "username_placeholder": "Enter a username",
+    "password_label": "Password",
+    "confirmpass_label": "Confirm Password",
+    "department_label": "Department",
+    "department_placeholder": "Enter your department",
+    "create_account_button": "Create Account",
+    "login_prompt": "Already have an account?",
+    "login_link": "Sign In"
+  },
+    "login_page": {
+    "title": "Login",
+    "subtitle": "Log in to access the asset management system",
+    "username_label": "Username",
+    "username_placeholder": "username",
+    "password_label": "Password",
+    "password_placeholder": "Password",
+    "login_button": "Login",
+    "register_prompt": "Don't have an account?",
+    "register_link": "Register",
+    "error_message": "Login Failed, please try again."
+  },
+    "dashboard": {
+    "heading": "Assets",
+    "add_asset": "Add Asset",
+    "error_loading_assets": "Error loading assets",
+    "loading_message": "Loading..."
+  },
+  "validation": {
+    "username_required": "Username is required.",
+    "username_length": "Username must be at least 4 characters.",
+    "password_required": "Password is required.",
+    "password_invalid": "Password must be at least 8 characters and include a letter, number, and special character.",
+    "passwords_match": "Passwords do not match."
+  },
+  "asset": {
+    "identifier": "Identifier",
+    "type": "Type",
+    "department": "Department",
+    "location": "Location",
+    "assigned_to": "Assigned To",
+    "not_assigned": "Not Assigned",
+    "status": {
+      "in_use": "In Use",
+      "available": "Available",
+      "in_repair": "In Repair",
+      "retired": "Retired",
+      "lost": "Lost"
+    }
+  },
+  "add_asset_page": {
+        "title": "Add New Asset",
+        "subtitle": "Fill out the form to add a new asset to the system.",
+        "company_device_id_label": "Company Device ID",
+        "company_device_id_placeholder": "E.g., IT-LAP-001",
+        "name_label": "Name",
+        "name_placeholder": "E.g., HP Spectre x360",
+        "type_label": "Type",
+        "type_placeholder": "Select a type",
+        "brand_label": "Brand",
+        "brand_placeholder": "E.g., HP",
+        "model_label": "Model",
+        "model_placeholder": "E.g., Spectre x360",
+        "serial_number_label": "Serial Number",
+        "serial_number_placeholder": "E.g., SN12345678",
+        "purchase_date_label": "Purchase Date",
+        "status_label": "Status",
+        "location_label": "Location",
+        "location_placeholder": "E.g., Building A, Desk 5",
+        "department_label": "Department",
+        "department_placeholder": "E.g., IT Department",
+        "notes_label": "Notes",
+        "notes_placeholder": "Any additional information...",
+        "color_label": "Color",
+        "color_placeholder": "E.g., Black or Silver",
+        "attachments_label": "Attachments",
+        "attachments_placeholder": "E.g., Keyboard",
+        "create_button": "Create Asset",
+        "add_attachment_button": "Add Attachment"
+    },
+    "asset_detail_page": {
+        "loading": "Loading asset details...",
+        "error": "Error loading asset.",
+        "not_found": "Asset not found.",
+        "specifications_title": "Full Specifications",
+        "company_device_id_label": "ID",
+        "type_label": "Type",
+        "brand_label": "Brand",
+        "model_label": "Model",
+        "serial_number_label": "Serial Number",
+        "color_label": "Color",
+        "purchase_date_label": "Purchase Date",
+        "location_label": "Location",
+        "department_label": "Department",
+        "assigned_to_label": "Assigned To",
+        "notes_label": "Notes",
+        "attachments_label": "Attachments",
+        "delete_button": "Delete Asset",
+        "edit_button": "Edit Asset",
+        "not_available": "N/A",
+        "error_loading_asset": "Error loading asset",
+        "loading_message": "Loading...",
+        "log_title": "Maintenance Logs",
+        "add_log": "Add Maintenance Log"
+    },
+    "edit_asset_page": {
+        "title": "Edit Asset",
+        "subtitle": "Update the details of the asset.",
+        "update_button": "Update Asset",
+        "save_button": "Save",
+        "cancel_button": "Cancel",
+        "remove_button": "Remove"
+    },
+    "log": {
+      "title": "Add Maintenance Log",
+      "maintenance_date_label": "Maintenance Date",
+      "description": "Description",
+      "description_placeholder": "Describe the maintenance performed...",
+      "performedBy_label": "Performed By",
+      "performedBy_placeholder": "Name of the person who performed the maintenance",
+      "cost_label": "Cost",
+      "cost_placeholder": "e.g., 10.50",
+      "notes_label": "Notes",
+      "notes_placeholder": "Any additional notes...",
+      "submit_button": "Submit Log"
+    },
+    "log_display": {
+      "date_label": "Date",
+      "description_label": "Description",
+      "performed_by_label": "Performed By",
+      "cost_label": "Cost",
+      "notes_label": "Notes"
+    },
+    "edit_log_page": {
+    "title": "Edit Maintenance Log",
+    "subtitle": "Use the form below to update the maintenance log details.",
+    "save_button": "Save",
+    "cancel_button": "Cancel"
+    },
+    "delete_dialog": {
+    "open_button": "Delete Asset",
+    "title": "Confirm Deletion",
+    "description": "Are you sure you want to permanently delete this asset? This action cannot be undone.",
+    "cancel_button": "Cancel",
+    "delete_button": "Delete"
+  }
+
+}

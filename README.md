@@ -1,12 +1,51 @@
-# React + Vite
+# Assetrack - Asset Tracking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## App Name & Purpose
 
-Currently, two official plugins are available:
+**AsseTrack** is a full-stack asset management application designed to help companies track and manage their physical assets and their maintenance history. The app provides a clear and intuitive dashboard for both **Admins** and **Employees**, ensuring that all company assets are accounted for and properly maintained.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project was developed to demonstrate proficiency in building a comprehensive MERN-stack application, focusing on secure user authentication, role-based authorization, and efficient data management.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+To get the application up and running, follow these links:
+
+* **Deployed App:** [Link to your deployed frontend application]
+### **Planning & Documentation**
+### User Stories
+[Click here to read User Stories](./User_Stories.txt)
+## Wireframes
+![Dashboard Page](./public/Dashboard.png)
+![Asset Details Page](./public/AssetPage.png)
+### ERD
+![ER Diagram of Assetrack database](./public/ERD.png)
+
+* **Backend Repository:** [Link to your backend repository]
+
+---
+
+## Technologies Used
+
+* **Frontend:** React.js
+* **Styling:** CSS, Material-UI
+* **State Management:** React Hooks
+* **Networking:** Axios
+* **Package Manager:** npm
+
+---
+
+## Next Steps
+
+* **Advanced Search & Filtering:** Add robust search functionality to find assets by name, type, or serial number.
+* **User Management Panel:** Build a dedicated interface for admins to **create, edit, and delete user accounts**.
+* **Notifications:** Implement a notification system for upcoming maintenance dates.
+* **Reporting:** Create reports for asset status, maintenance costs, and other key metrics.
+
+---
+
+## Attributions
+
+* **UI Framework:** Material-UI
+* **Hosting:** Vercel

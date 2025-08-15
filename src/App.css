@@ -1,4 +1,115 @@
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #ffffff;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --label-color: #a0aec0;
+  --brand-blue: #3d9bcd;
+  --brand-blue-hover: #2c7ea1;
+  --link-color: #3d9bcd;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
+  background-color: var(--secondary-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-primary);
 }
+
+form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-wrapper label{
+  font-weight: bold;
+}
+.input-wrapper input {
+  padding: 0.6em 1.2em;
+  margin: 0.5em 0;
+  width: 100%;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.input-wrapper input:-webkit-autofill,
+.input-wrapper input:-webkit-autofill:hover,
+.input-wrapper input:-webkit-autofill:focus,
+.input-wrapper input:-webkit-autofill:active{
+  box-shadow: inset 0 0 0 1000px white !important;
+  -webkit-text-fill-color: var(--text-primary) !important;
+  background-color: white;
+}
+input::placeholder {
+  opacity: 0.7;
+}
+.input-wrapper span{
+  color: red;
+  font-size: 14px;
+}
+form button {
+  background-color: var(--brand-blue);
+  margin: 1em 0;
+  color: var(--primary-bg);
+  width: 200px;
+  align-self: center;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+  background-color: var(--brand-blue-hover);
+}
+
+form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.status {
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 25px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--brand-blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+ 

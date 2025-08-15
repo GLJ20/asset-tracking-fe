@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "dashboard_link": "الأصول",
+    "profile_link": "الملف الشخصي",
+    "logout_button": "تسجيل الخروج",
+    "signin_link": "تسجيل الدخول",
+    "signup_link": "إنشاء حساب"
+  },
+  "landing_page": {
+    "title": "إدارة تتبع الأصول",
+    "description": "قم بإدارة وتتبع أصول شركتك واحتياجات الصيانة الخاصة بها بكل سهولة.",
+    "signin_button": "تسجيل الدخول",
+    "signup_button": "إنشاء حساب"
+  },
+  "register_page": {
+    "title": "التسجيل",
+    "subtitle": "ابدأ بإنشاء حسابك",
+    "name_label": "الاسم الكامل",
+    "name_placeholder": "أدخل اسمك الكامل",
+    "username_label": "اسم المستخدم",
+    "username_placeholder": "أدخل اسم المستخدم",
+    "password_label": "كلمة المرور",
+    "confirmpass_label": "تأكيد كلمة المرور",
+    "department_label": "القسم",
+    "department_placeholder": "أدخل اسم قسمك",
+    "create_account_button": "إنشاء حساب",
+    "login_prompt": "هل لديك حساب بالفعل؟",
+    "login_link": "تسجيل الدخول"
+  },
+  "login_page": {
+    "title": "تسجيل الدخول",
+    "subtitle": "قم بتسجيل الدخول للوصول إلى نظام إدارة الأصول",
+    "username_label": "اسم المستخدم",
+    "username_placeholder": "اسم المستخدم",
+    "password_label": "كلمة المرور",
+    "password_placeholder": "كلمة المرور",
+    "login_button": "تسجيل الدخول",
+    "register_prompt": "ليس لديك حساب؟",
+    "register_link": "إنشاء حساب",
+    "error_message": "فشل تسجيل الدخول، يرجى المحاولة مرة أخرى."
+  },
+    "dashboard": {
+    "heading": "الأصول",
+    "add_asset": "إضافة أصل جديد",
+    "error_loading_assets": "حدث خطأ أثناء تحميل الأصول",
+    "loading_message": "جاري التحميل..."
+  },  
+  "validation": {
+    "username_required": "اسم المستخدم مطلوب.",
+    "username_length": "يجب أن يكون اسم المستخدم 4 أحرف على الأقل.",
+    "password_required": "كلمة المرور مطلوبة.",
+    "password_invalid": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل وتتضمن حرفًا ورقمًا ورمزًا خاصًا.",
+    "passwords_match": "كلمات المرور غير متطابقة."
+  },
+  "asset": {
+    "identifier": "المعرف",
+    "type": "النوع",
+    "department": "القسم",
+    "location": "الموقع",
+    "assigned_to": "المسند إليه",
+    "not_assigned": "لم يتم إسناده",
+    "status": {
+      "in_use": "قيد الاستخدام",
+      "available": "متوفر",
+      "in_repair": "قيد الإصلاح",
+      "retired": "متقاعد",
+      "lost": "مفقود"
+    }
+  },
+  "add_asset_page": {
+        "title": "إضافة أصل جديد",
+        "subtitle": "املأ النموذج لإضافة أصل جديد إلى النظام.",
+        "company_device_id_label": "معرف جهاز الشركة",
+        "company_device_id_placeholder": "مثال: IT-LAP-001",
+        "name_label": "الاسم",
+        "name_placeholder": "مثال: HP Spectre x360",
+        "type_label": "النوع",
+        "type_placeholder": "اختر نوعًا",
+        "brand_label": "الماركة",
+        "brand_placeholder": "مثال: HP",
+        "model_label": "الموديل",
+        "model_placeholder": "مثال: Spectre x360",
+        "serial_number_label": "الرقم التسلسلي",
+        "serial_number_placeholder": "مثال: SN12345678",
+        "purchase_date_label": "تاريخ الشراء",
+        "status_label": "الحالة",
+        "location_label": "الموقع",
+        "location_placeholder": "مثال: مبنى أ، مكتب 5",
+        "department_label": "القسم",
+        "department_placeholder": "مثال: قسم تكنولوجيا المعلومات",
+        "notes_label": "ملاحظات",
+        "notes_placeholder": "أدخل أي معلومات إضافية...",
+        "color_label": "اللون",
+        "color_placeholder": "مثال: أسود أو فضي",
+        "attachments_label": "المرفقات",
+        "attachments_placeholder": "مثال: كيبورد",
+        "create_button": "إنشاء أصل",
+        "add_attachment_button": "أضف مرفق"
+    },
+    "asset_detail_page": {
+        "loading": "جاري تحميل تفاصيل الأصل...",
+        "error": "حدث خطأ أثناء تحميل الأصل.",
+        "not_found": "الأصل غير موجود.",
+        "specifications_title": "المواصفات الكاملة",
+        "company_device_id_label": "المعرف",
+        "type_label": "النوع",
+        "brand_label": "الماركة",
+        "model_label": "الموديل",
+        "serial_number_label": "الرقم التسلسلي",
+        "color_label": "اللون",
+        "purchase_date_label": "تاريخ الشراء",
+        "location_label": "الموقع",
+        "department_label": "القسم",
+        "assigned_to_label": "المسند إليه",
+        "notes_label": "الملاحظات",
+        "attachments_label": "المرفقات",
+        "delete_button": "حذف الأصل",
+        "edit_button": "تعديل الأصل",
+        "not_available": "غير متاح",
+        "error_loading_asset": "حدث خطأ أثناء تحميل الأصل",
+        "loading_message": "جاري التحميل...",
+        "log_title": "سجل الصيانة",
+        "add_log": "إضافة سجل صيانة"
+    }, 
+    "edit_asset_page": {
+        "title": "تعديل الأصل",
+        "subtitle": "تحديث تفاصيل الأصل.",
+        "update_button": "تحديث الأصل",
+        "save_button": "حفظ",
+        "cancel_button": "إلغاء",
+        "remove_button": "إزالة"
+    },
+    "log": {
+      "title": "إضافة سجل صيانة",
+      "maintenance_date_label": "تاريخ الصيانة",
+      "description": "الوصف",
+      "description_placeholder": "وصف الصيانة التي تم إجراؤها...",
+      "performedBy_label": "تم بواسطة",
+      "performedBy_placeholder": "اسم الشخص الذي قام بالصيانة",
+      "cost_label": "التكلفة",
+      "cost_placeholder": "مثال: 10.50",
+      "notes_label": "ملاحظات",
+      "notes_placeholder": "أي ملاحظات إضافية...",
+      "submit_button": "إرسال السجل"
+    },
+    "log_display": {
+      "date_label": "التاريخ",
+      "description_label": "الوصف",
+      "performed_by_label": "تم بواسطة",
+      "cost_label": "التكلفة",
+      "notes_label": "ملاحظات"
+    },
+    "edit_log_page": {
+    "title": "تعديل سجل الصيانة",
+    "subtitle": "استخدم النموذج أدناه لتحديث تفاصيل سجل الصيانة.",
+    "save_button": "حفظ",
+    "cancel_button": "إلغاء"
+    } ,
+    "delete_dialog": {
+    "open_button": "حذف الأصل",
+    "title": "تأكيد الحذف",
+    "description": "هل أنت متأكد من أنك تريد حذف هذا الأصل نهائياً؟ لا يمكن التراجع عن هذا الإجراء.",
+    "cancel_button": "إلغاء",
+    "delete_button": "حذف"
+  }
+}

@@ -1,0 +1,56 @@
+.asset-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.asset-card {
+  background-color: var(--primary-bg);
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 400px;
+}
+
+.asset-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.asset-header {
+  margin-bottom: 1rem;
+}
+
+.asset-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.asset-brand-model {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+.asset-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.asset-details-grid .label {
+  font-weight: 600;
+  color: var(--label-color);
+}
+a{
+    text-decoration: none;
+}
