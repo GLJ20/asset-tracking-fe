@@ -1,0 +1,8 @@
+.prof-container{
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+}
+.prof-container div{
+    display: flex;
+}

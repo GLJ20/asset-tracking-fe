@@ -11,6 +11,7 @@ import AssetDetails from './pages/AssetDetails'
 import EditAsset from './pages/EditAsset'
 import AddLog from './pages/AddLog'
 import EditLog from './pages/EditLog'
+import ProfilePage from './pages/Profile'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Route path= '/signin' element={<SignIn />}/>
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/dashboard' element={<Dashboard />}/>
+        <Route path='/profile' element={<ProfilePage/>}/>
         <Route path='/assets/:assetid' element={<AssetDetails/>}/>
         <Route path='/addasset' element={<AddAsset/>}/>
         <Route path='/edit/:assetid' element={<EditAsset />}/>

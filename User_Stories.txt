@@ -1,0 +1,37 @@
+Two types of user
+Admin - User with full control to manage assets 
+Employee - User with control over their own assets
+
+Admin actions:
+Add Asset
+Update Asset
+Delete Asset
+Add Maintenance log
+Edit Maintenance log
+Delete Maintenance log
+View All assets 
+
+Employee actions:
+Add Asset
+Update Asset
+Delete Asset
+Add maintenance log
+Edit Maintenance log
+Delete Maintenance log
+
+Admin User Stories
+As an admin I want to be able to add an asset to track assets in the company
+As an admin I want to be able to update an asset to ensure all information is accurate
+As an admin I want to be able to delete an asset to ensure data integrity
+As an admin I want to be able to add a maintenance log to track the maintenance of an asset
+As an admin I want to be able to update a log to ensure all information is accurate
+As an admin I want to be able to delete a log to ensure data integrity
+As an admin I want to be able to view all assets so that I have a complete overview of all company assets.
+
+Employee User Stories
+As an employee I want to be able to add an asset to track a new asset assigned to me
+As an employee I want to be able to update an asset to ensure all information is accurate on assets assigned to me
+As an employee I want to be able to delete an asset to remove assets I am no longer responsible for
+As an employee I want to be able to add a maintenance log to document maintenance for an asset
+As an employee I want to be able to update a maintenance log to ensure all information is accurate
+As an employee I want to be able to delete a maintenance log to ensure data integrity
