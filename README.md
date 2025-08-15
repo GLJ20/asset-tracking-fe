@@ -22,7 +22,7 @@ To get the application up and running, follow these links:
 ### ERD
 ![ER Diagram of Assetrack database](./public/ERD.png)
 
-* **Backend Repository:** [Link to your backend repository]
+* **Backend Repository:** [Link to backend repository](https://github.com/GLJ20/asset-tracking-be)
 
 ---
 
