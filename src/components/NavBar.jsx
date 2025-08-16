@@ -11,7 +11,6 @@ const NavBar = () => {
     const {t, i18n} = useTranslation()
     const token = localStorage.getItem('token')
     const [isOpen, setIsOpen] = useState(false)
-    // const [menuVisible, setMenuVisible] = useState(false)
 
     const handleLogout = () => {
         signout()
@@ -24,7 +23,6 @@ const NavBar = () => {
 
     const handleToggle = () => {
         setIsOpen(true)
-        // setMenuVisible(true)
     }
 
     return(
