@@ -9,7 +9,6 @@ const EditAsset = () => {
     const {t, i18n} = useTranslation()
     const {assetid} = useParams()
     const [asset, setAsset] = useState({})
-    // const [open, setOpen] = useState(false)
     const [err, setErr] = useState(null)
     const [loading, setLoading] = useState(true)
 
