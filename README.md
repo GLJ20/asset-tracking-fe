@@ -12,7 +12,7 @@ The project was developed to demonstrate proficiency in building a comprehensive
 
 To get the application up and running, follow these links:
 
-* **Deployed App:** [Link to your deployed application](https://b1-asset.vercel.app/)
+* **Deployed App:** [Link to deployed application](https://b1-asset.vercel.app/)
 ### **Planning & Documentation**
 ### User Stories
 [Click here to read User Stories](./User_Stories.txt)
