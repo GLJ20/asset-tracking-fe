@@ -60,11 +60,10 @@
     "assigned_to": "Assigned To",
     "not_assigned": "Not Assigned",
     "status": {
-      "in_use": "In Use",
-      "available": "Available",
-      "in_repair": "In Repair",
+      "active": "Active",
+      "broken": "Broken",
       "retired": "Retired",
-      "lost": "Lost"
+      "under_maintenance": "Under Maintenance"
     }
   },
   "add_asset_page": {

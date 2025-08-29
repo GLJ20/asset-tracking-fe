@@ -14,13 +14,11 @@ const AssetDetails = () => {
     let navigate = useNavigate()
     const {t, i18n} = useTranslation()
     
-
     const statuses = {
-        'In Use': 'asset.status.in_use',
-        'Available': 'asset.status.available',
-        'In Repair': 'asset.status.in_repair',
-        "Retired": "asset.status.retired",
-        "Lost": "asset.status.lost"
+        'Active': 'asset.status.active',
+        'Broken': 'asset.status.broken',
+        'Retired': 'asset.status.retired',
+        "Under Maintenance": "asset.status.under_maintenance",
     }
 
     useEffect(() => {
@@ -57,7 +55,7 @@ const AssetDetails = () => {
     
     const assignedUserName = asset.assignedTo?.name || t('asset.not_assigned')
     
-    const statusTranslation = statuses[asset.status] || 'asset.status.in_use'
+    const statusTranslation = statuses[asset.status] || t('asset.status.active')
     return(
         <>
         <Link to='/dashboard'><img src="/arrow.png" className={`back-asset-details ${i18n.language === 'ar' ? 'ar' : 'en'}`} alt="arrowtogopreviouspage"/></Link>
@@ -137,9 +135,6 @@ const AssetDetails = () => {
                         {t('asset_detail_page.edit_button')}
                     </button>
                     </Link>
-                    {/* <button className="delete-button">
-                        {t('asset_detail_page.delete_button')}
-                    </button> */}
                     <DeleteAssetBtn assetid={assetid}/>
                 </div>
             </div>

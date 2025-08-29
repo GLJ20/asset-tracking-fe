@@ -60,11 +60,10 @@
     "assigned_to": "المسند إليه",
     "not_assigned": "لم يتم إسناده",
     "status": {
-      "in_use": "قيد الاستخدام",
-      "available": "متوفر",
-      "in_repair": "قيد الإصلاح",
-      "retired": "متقاعد",
-      "lost": "مفقود"
+      "active": "يعمل",
+      "broken": "معطل",
+      "retired": "تم الاستغناء عنه",
+      "under_maintenance": "قيد الإصلاح"
     }
   },
   "add_asset_page": {
@@ -95,7 +94,16 @@
         "attachments_label": "المرفقات",
         "attachments_placeholder": "مثال: كيبورد",
         "create_button": "إنشاء أصل",
-        "add_attachment_button": "أضف مرفق"
+        "add_attachment_button": "أضف مرفق",
+        "type": {
+          "Computer": "كمبيوتر",
+          "Lab Device": "جهاز مختبر",
+          "Printer": "طابعة",
+          "Monitor": "شاشة",
+          "Phone": "هاتف",
+          "Refrigerator": "ثلاجة",
+          "Other": "أخرى"
+        }
     },
     "asset_detail_page": {
         "loading": "جاري تحميل تفاصيل الأصل...",

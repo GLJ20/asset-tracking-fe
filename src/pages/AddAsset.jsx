@@ -16,13 +16,15 @@ const AddAsset = () => {
         model: '',
         serialNumber: '',
         purchaseDate: '',
-        status: 'In Use',
+        status: 'Active',
         location: '',
         department: '',
         notes: '',
         color: '',
         attachments: []
     }
+
+    const device_types = ['Computer', 'Lab Device', 'Printer', 'Monitor', 'Phone', 'Refrigerator', 'Other']
 
     const [formVals, setFormVals] = useState(initialState)
     const [newAttachment, setNewAttachment] = useState('')
@@ -87,17 +89,9 @@ const AddAsset = () => {
                             <label htmlFor="type">{t('add_asset_page.type_label')} *</label>
                             <select onChange={handleChange} id="type" value={formVals.type} required>
                                 <option value="" disabled>{t('add_asset_page.type_placeholder')}</option>
-                                <option value="Laptop">Laptop</option>
-                                <option value="Monitor">Monitor</option>
-                                <option value="Desktop">Desktop</option>
-                                <option value="Tablet">Tablet</option>
-                                <option value="Smartphone">Smartphone</option>
-                                <option value="3D Printer">3D Printer</option>
-                                <option value="Milling Machine">Milling Machine</option>
-                                <option value="Vacuum Former">Vacuum Former</option>
-                                <option value="Furnace">Furnace</option>
-                                <option value="Scanner">Scanner</option>
-                                <option value="Other">Other</option>
+                                {device_types.map((type) => (
+                                    <option key={type} value={type}>{t(`add_asset_page.type.${type}`)}</option>
+                                ))}
                             </select>
                         </div>
                         <div className="input-wrapper">
@@ -123,11 +117,10 @@ const AddAsset = () => {
                         <div className="input-wrapper">
                             <label htmlFor="status">{t('add_asset_page.status_label')} *</label>
                             <select onChange={handleChange} id="status" value={formVals.status} required>
-                                <option value="In Use">In Use</option>
-                                <option value="Available">Available</option>
-                                <option value="In Repair">In Repair</option>
-                                <option value="Retired">Retired</option>
-                                <option value="Lost">Lost</option>
+                                <option value="Active">{t('asset.status.active')}</option>
+                                <option value="Broken">{t('asset.status.broken')}</option>
+                                <option value="Retired">{t('asset.status.retired')}</option>
+                                <option value="Under Maintenance">{t('asset.status.under_maintenance')}</option>
                             </select>
                         </div>
                         <div className="input-wrapper">

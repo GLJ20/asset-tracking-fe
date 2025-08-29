@@ -14,6 +14,7 @@ const EditAsset = () => {
 
     const [attachments, setAttachments] = useState(asset.attachments || [])
     const [newAttachment, setNewAttachment] = useState(''); 
+    const device_types = ['Computer', 'Lab Device', 'Printer', 'Monitor', 'Phone', 'Refrigerator', 'Other']
 
     useEffect(() => {
         const handleAsset = async () => {
@@ -112,17 +113,9 @@ const EditAsset = () => {
                             <label htmlFor="type">{t('add_asset_page.type_label')} *</label>
                             <select onChange={handleChange} id="type" value={asset.type} required>
                                 <option value="" disabled>{t('add_asset_page.type_placeholder')}</option>
-                                <option value="Laptop">Laptop</option>
-                                <option value="Monitor">Monitor</option>
-                                <option value="Desktop">Desktop</option>
-                                <option value="Tablet">Tablet</option>
-                                <option value="Smartphone">Smartphone</option>
-                                <option value="3D Printer">3D Printer</option>
-                                <option value="Milling Machine">Milling Machine</option>
-                                <option value="Vacuum Former">Vacuum Former</option>
-                                <option value="Furnace">Furnace</option>
-                                <option value="Scanner">Scanner</option>
-                                <option value="Other">Other</option>
+                                {device_types.map((type) => (
+                                    <option key={type} value={type}>{t(`add_asset_page.type.${type}`)}</option>
+                                ))}
                             </select>
                         </div>
                         <div className="input-wrapper">
@@ -148,11 +141,10 @@ const EditAsset = () => {
                         <div className="input-wrapper">
                             <label htmlFor="status">{t('add_asset_page.status_label')} *</label>
                             <select onChange={handleChange} id="status" value={asset.status} required>
-                                <option value="In Use">{t('asset_status.In Use')}</option>
-                                <option value="Available">{t('asset_status.Available')}</option>
-                                <option value="In Repair">{t('asset_status.In Repair')}</option>
-                                <option value="Retired">{t('asset_status.Retired')}</option>
-                                <option value="Lost">{t('asset_status.Lost')}</option>
+                                <option value="Active">{t('asset.status.active')}</option>
+                                <option value="Broken">{t('asset.status.broken')}</option>
+                                <option value="Retired">{t('asset.status.retired')}</option>
+                                <option value="Under Maintenance">{t('asset.status.under_maintenance')}</option>
                             </select>
                         </div>
                         <div className="input-wrapper">

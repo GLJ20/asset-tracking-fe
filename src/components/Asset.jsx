@@ -5,16 +5,15 @@ const Asset = ({asset}) => {
     const {t, i18n} = useTranslation()
     //not a real word
     const statuses = {
-        'In Use': 'asset.status.in_use',
-        'Available': 'asset.status.available',
-        'In Repair': 'asset.status.in_repair',
-        "Retired": "asset.status.retired",
-        "Lost": "asset.status.lost"
+        'Active': 'asset.status.active',
+        'Broken': 'asset.status.broken',
+        'Retired': 'asset.status.retired',
+        "Under Maintenance": "asset.status.under_maintenance",
     }
 
     const assignedUserName = asset.assignedTo?.name || t('asset.not_assigned')
 
-    const statusTranslation = statuses[asset.status] || 'asset.status.in_use'
+    const statusTranslation = statuses[asset.status] || t('asset.status.active')
 
     return(
         <>
